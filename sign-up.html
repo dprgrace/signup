@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="sign-in">
+        <article class="sign-in__details">
+            <h1>Sign Up</h1>
+            <p> Fill the form below to create your account</p>
+            <form class="sign-in__form">
+                <div class="form__control">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" placeholder="Enter your fullname">
+                </div>
+                <div class="form__control"></div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form__control"></div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <div class="form__control"></div>
+                <label for="cpassword">Confirm Password</label>
+                <input type="cpassword" id="password" placeholder="Confirm your password">
+                </div>
+                <div class="sign-in__extras">
+                    <div>
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Password</label>
+                    </div>
+                    <a href="">Forgot Password</a>
+                </div>
+                <button class="btn primary" type="submit">Sign Up</button>
+                <button class="btn">
+                    <img src="./assets/google.jpg" alt="Google logo">
+                    <p>Sign up with Google</p>
+                </button>
+            </form>
+            <small class="next__page">Already have an account? <a href="index.html">Sign In</a></small>
+        </article>
+        <article class="sign-in__logo">
+        <div>
+            <img src="./assets/logo.jpg" alt="Website Logo">
+        </article>
+        </div>
+    </section>
+</body>
+</html>

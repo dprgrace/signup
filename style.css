@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --color-white: #faf2dd;
+    --color-light: #f3c9c3;
+    --color-dark: #f9adb7;
+    --color-pink: #e981a4;
+    --color-primary: #ff758f;
+    --color-body-bg: #ffccd5;
+
+    --transitions: all 300ms ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-body-bg);
+    color: var(--color-dark);
+    font-size: 0.9rem;
+    display: grid;
+    place-items: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    color: var(--color-pink);
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+a, a:active, a:visited {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: var(var--transition);
+}
+
+.btn.primary {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.btn:hover {
+    background: var(--color-pink);
+    color: var(--color-white);
+}
+
+.btn img {
+    width: 1.2rem;
+}
+
+/* SIGN IN */
+.sign-in {
+    background: var(--color-white);
+    width: 60rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0; 
+}
+
+body {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.sign-in__details {
+    padding: 2rem 4rem;
+}
+
+.sign-in__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.form__control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input:not([type="checkbox"]) {
+    width: 100%;
+    border: 1px solid var(--color-body-bg);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+input::placeholder {
+    color: var(--color-body-bg);
+}
+
+.farfa-eye {
+    margin-left: -30px; 
+    cursor: pointer;
+}
+
+label {
+    font-weight: 500;
+    color: var(--color-);
+}
+
+.sign-in__extras {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-in__extras div {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+button:last-child {
+    margin-top: -0.5rem;
+}
+
+.next__page {
+    margin-top: 1rem;
+    text-align: center;
+    display: block;
+}
+
+.sign-in__logo {
+    display: grid;
+    place-content: center;
+    background: url('./assets/bg.jpg'), var(--color-primary);
+    height: 100%;
+}
+
+sign-in__logo div {
+    width: 22rem;
+    aspect-ratio: 1/1;
+}
+
+
+
+
+/* MEDIA QUERIES (small screens) */
+@media screen and (max-width: 600px) {
+    body {
+        display: block;
+        background: var(--color-white);
+    }
+   
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .sign-in {
+        grid-template-columns: 1fr;
+        width: 100vw;
+        overflow: visible;
+    }
+    
+    .sign-in__details {
+        grid-row: 2/3;
+        padding: 2rem 1.5rem;
+    }
+    
+    .sign-in__form {
+        margin-top: 1/5rem;
+        gap: 1rem;
+    }
+    
+    .sign-in__extras {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .sign-in__logo {
+        padding: 1/5rem 0;
+    }
+
+    .sign-in__logo div {
+        width: 10rem;
+    }
+}
+
+
